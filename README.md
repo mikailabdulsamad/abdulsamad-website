@@ -1,4 +1,4 @@
-Hello! My name is Mikail Abdulsamad, and I'm passionate frontend developer with 3 years of experience in crafting scalable, responsive,and visually appealing web applications. I am decicated to turning ideas into dynamic,interactive digital experiences.
+Hello! My name is Mikail Abdulsamad, and I'm passionate frontend developer with 3 years of experience in crafting scalable, responsive,and visually appealing web applications. I am dedicated to turning ideas into dynamic,interactive digital experiences.
 
   Throughout my journey,I've succesfully completed numerous personal and client honing my skills in
  (a) Building reponsive and mobile-friendly interface
