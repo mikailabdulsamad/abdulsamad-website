@@ -1,0 +1,152 @@
+*{
+  padding:0;
+  margin:0;
+}
+html{
+  box-sizing:border-box;
+  font-size:62.5%;
+  scroll-behavior:smooth;
+}
+nav{
+  position:fixed;
+  width:100vw;
+  top:0;
+  left:0;
+  font-weight:bold;
+  font-size:1.8rem;
+  font-family:Helvetica,sans-serif;
+  display:flex;
+  justify-content:flex-end;
+  height:65px;
+  background-color:red;
+}
+nav ul{
+  min-width:25vw;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  flex-wrap:nowrap;
+}
+a{
+  text-decoration:none;
+  margin:0 1rem;
+  color:linen;
+}
+ul li{
+  list-style:none;
+  color:linen;
+  margin-right:2rem;
+}
+.project-title{
+	border:medium solid linen;
+	border-radius:10px;
+}
+
+@media (max-width:600px){
+  nav{
+    justify-content:center;
+  }
+  nav ul{
+    flex-direction:column;
+    justify-content:center;
+  }
+  html{
+	  font-size:50%;
+  }
+  h1{font-size:40%;}
+}
+#welcome-section{
+height:100vh;
+width:100vw;
+background-color:#003;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+h1{
+  text-align:center;
+  color:orangered;
+  font-family:Arial;
+  font-size:3rem;
+}
+h2{
+  color:linen;
+  font-family:Arial;
+  font-size:2rem;
+  text-align:center;
+}
+#projects{
+  background-color:#005;
+}
+#projects{
+  text-align:center;
+  padding:10rem 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.pro{
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid  white;
+}
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+
+.header-section{
+  text-align:center;
+  padding:10rem 2rem;
+}
+.header-section p{
+  font-size:2rem;
+  color:lightGray;
+
+}
+#contacts{
+  background-color:#000;
+  
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  
+}
+
+.contact-details {
+  color:linen;
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background: gray;
+  border-top: 4px solid red;
+  color:linen;
+}
+footer a{
+	color:#003;
+}

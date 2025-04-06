@@ -1,0 +1,133 @@
+<!Doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>challenge-execises</title>
+  <style>
+  *::after,
+  *::before{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  }
+  
+  body{
+  background-color:black;
+  }
+  .calculation-div{
+  width:320px;
+  margin:50px auto;
+  border:medium solid yellow;
+  
+  }
+  .space::after{
+	content:"";
+	width:130px;
+  }
+  
+	.page{
+	height:35px;
+	width:100%;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+	background-color:black;
+	color:yellow;
+	border-top: medium solid yellow;
+	border-bottom: medium solid yellow;
+	font-size:25px;
+	font-weight:bold;
+	overflow-x:hidden;
+	}
+	.page::after{
+	content:"";
+	width:10px;
+	}
+	
+	p{
+	display:flex;
+	justify-content:space-around;
+	}
+	
+	button{
+	width:65px;
+	height:60px;
+	color:black;
+	background-color:yellow;
+	border-radius:50%;
+	font-size:20px;
+	font-weight:bold;
+	}
+	h1{
+	text-align:center;
+	font-weight:bold;
+	color:yellow;
+	font-family:Tahoma;
+	}
+	
+	
+  </style>
+</head>
+<body>
+<h1>ABDULSAMAD CALCULATOR</h1>
+<div class="calculation-div">
+	<div class="page"></div>
+ <p>
+	<button onclick="calculator('1')">1</button>
+	<button onclick="calculator('2')">2</button>
+	<button onclick="calculator('3')">3</button>
+	<button onclick="calculator(' + ')">+</button>	
+ </p>
+ <p>
+ <button onclick="calculator('4')">4</button>
+	<button onclick="calculator('5')">5</button>
+	<button onclick="calculator('6')">6</button>
+	<button onclick="calculator(' - ')">-</button>
+ </p>
+  <p>
+ <button onclick="calculator('7')">7</button>
+	<button onclick="calculator('8')">8</button>
+	<button onclick="calculator('9')">9</button>
+	<button onclick="calculator(' * ')">*</button>	
+ </p>
+ <p>
+ <button onclick="calculator('0')">0</button>
+	<button onclick="calculator('.')">.</button>
+	<button onclick="
+	calculate = eval(calculate);
+	document.querySelector('.page').innerHTML = calculate ";
+	>=</button>
+	<button onclick="calculator(' / ')">/</button>	
+ </p>
+ <p class="space" ><button onclick="calculate = '';
+	document.querySelector('.page').innerHTML = calculate;
+	localStorage.setItem('calculate',calculate)
+ " class="clear">clear</button>
+	<button  onclick="
+	calculate = remove();
+	document.querySelector('.page').innerHTML = calculate;
+	localStorage.setItem('calculate',calculate)
+	">DEL</button>	</p>
+</div>
+	
+	
+ <script>
+	let calculate = localStorage.getItem('calculate')||
+	"";
+    function calculator(value){
+		calculate += value;
+		console.log(calculate);
+		document.querySelector('.page').innerHTML = calculate;
+		localStorage.setItem('calculate',calculate)
+	}
+	function remove(){
+	let see = document.querySelector('.page').innerHTML;
+	let me = see.slice(0,-1);
+	return me;
+	}
+	
+ </script>
+</body>
+</html>
